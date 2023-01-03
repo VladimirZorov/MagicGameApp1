@@ -89,8 +89,8 @@ public class ControllerImpl implements Controller{
                 protection = 0;
             }
             sb.append(String.format("%s: %s", magician.getClass().getSimpleName(), magician.getUsername())).append(System.lineSeparator())
-                    .append(String.format("Health: %d", health)).append(System.lineSeparator())
-                    .append(String.format("Protection: %d", protection)).append(System.lineSeparator())
+                    .append(String.format("Health: %d",magician.getHealth())).append(System.lineSeparator())
+                    .append(String.format("Protection: %d", magician.getProtection())).append(System.lineSeparator())
                     .append(String.format("Magic: %s", magician.getMagic().getName())).append(System.lineSeparator());
         }
         return sb.toString().trim();
